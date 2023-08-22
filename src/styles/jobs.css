@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-jobs {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (max-width: 992px) {
+    margin: 0px;
+  }
+}
+
+.jobs-panel {
+  display: flex;
+  align-items: flex-start;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.job-listing-container {
+  padding-top: 5px;
+  width: 427px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.job-information-container {
+  top: 106px;
+  padding: 10px 5px 10px 5px;
+  flex: 1;
+  flex-grow: 1;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

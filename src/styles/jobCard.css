@@ -1,0 +1,129 @@
+.job-listing-card {
+  background-color: rgb(248, 248, 248);
+  border: 8px;
+  border-radius: 8px;
+  color: rgb(58, 58, 58);
+}
+
+.job-listing-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.job-listing-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 20px;
+}
+
+.job-listing-card-info {
+  display: flex;
+  align-items: flex-start;
+  color: rgb(58, 58, 58);
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.company-logo-container {
+  margin-right: 10px;
+  height: 45px;
+  width: 45px;
+}
+
+.information-container {
+  flex-basis: auto !important;
+  flex-shrink: 1;
+}
+
+.information-container p {
+  margin-block-end: 2px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  margin-block-start: 0px;
+  white-space: pre-wrap;
+}
+
+.information-container h2 {
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  display: -webkit-box;
+  white-space: initial;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.specialisation-container {
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.specialisation-tag {
+  padding: 5px 8px 5px 8px;
+  border-radius: 5px;
+  background-color: rgb(221, 247, 233);
+  color: rgb(31, 199, 106);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.job-listing-card-details {
+  padding-left: 55px;
+  padding-bottom: 10px;
+  color: rgb(58, 58, 58);
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.created-at-country {
+  margin-bottom: 6px;
+  white-space: pre-wrap;
+  color: rgb(131, 131, 131);
+}
+
+.created-at {
+  color: rgb(31, 199, 106);
+  font-weight: 600;
+}
+
+.country {
+  display: inline-block;
+}
+
+.job-listing-card-salary {
+  margin-bottom: 2px;
+  margin-top: 0px;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.job-listing-card-salary span {
+  padding-top: 3px;
+}
+
+.job-listing-card-skills {
+  padding-top: 5px;
+  min-height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: rgb(248, 248, 248);
+}
+
+.job-listing-card-skills span {
+  color: #838383;
+  display: inline-block;
+  padding: 5px 8px;
+  margin-right: 5px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
