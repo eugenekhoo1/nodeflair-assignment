@@ -18,14 +18,13 @@ export default function JobCard({ posting, active, onJobCardClick }) {
       >
         <div className="job-listing-card-container">
           <div className="job-listing-card-info">
-            <div className="company-logo-container">
-              <img
-                src={posting.img}
-                alt="company logo"
-                height={45}
-                width={45}
-              />
-            </div>
+            <img
+              className="company-logo"
+              src={posting.img}
+              alt="company logo"
+              height={45}
+              width={45}
+            />
             <div className="information-container">
               <p>
                 <span>{posting.company}</span>

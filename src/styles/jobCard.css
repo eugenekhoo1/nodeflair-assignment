@@ -3,12 +3,12 @@
   border: 8px;
   border-radius: 8px;
   color: rgb(58, 58, 58);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .job-listing-card:hover {
-  cursor: pointer;
   transform: translateY(-5px);
-  transition: transform 0.4s ease-in-out;
 }
 
 .job-listing-card-container {
@@ -25,10 +25,11 @@
   justify-content: flex-start;
 }
 
-.company-logo-container {
+.company-logo {
   margin-right: 10px;
   height: 45px;
   width: 45px;
+  border-radius: 5px;
 }
 
 .information-container {

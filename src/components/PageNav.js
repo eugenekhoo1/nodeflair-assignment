@@ -1,7 +1,7 @@
 import "../styles/pageNav.css";
 import { getPageNumbers } from "../lib/utils";
 
-export default function PageNav({ page, maxPage, onPageClick }) {
+export default function PageNav({ page, maxPage }) {
   const pageNumbers = getPageNumbers(page, maxPage);
 
   return (

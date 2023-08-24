@@ -12,6 +12,7 @@ export default function Jobs() {
     getPostings(page)
   );
   const [activePosting, setActivePosting] = useState(0); // index
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
     const getActivePagePostings = () => {
@@ -23,9 +24,16 @@ export default function Jobs() {
 
   const handleJobCardClick = (index) => {
     setActivePosting(index);
+    setModalIsOpen(false);
   };
 
-  const handlePageClick = () => {};
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <>
@@ -41,14 +49,15 @@ export default function Jobs() {
                   onJobCardClick={() => handleJobCardClick(index)}
                 />
               ))}
-              <PageNav
-                page={parseInt(page)}
-                maxPage={getMaxPage()}
-                onPageClick={() => handlePageClick()}
-              />
+              <PageNav page={parseInt(page)} maxPage={getMaxPage()} />
             </div>
             <div className="job-information-container">
-              <InfoCard posting={activePagePostings[activePosting]} />
+              <InfoCard
+                posting={activePagePostings[activePosting]}
+                modalStatus={modalIsOpen}
+                openModal={openModal}
+                closeModal={closeModal}
+              />
             </div>
           </div>
         </div>

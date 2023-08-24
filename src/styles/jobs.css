@@ -32,10 +32,11 @@
 }
 
 .job-information-container {
-  top: 106px;
+  top: 0;
   padding: 10px 5px 10px 5px;
-  flex: 1;
   flex-grow: 1;
+  position: sticky;
+  min-width: 0;
   @media (max-width: 992px) {
     display: none;
   }
